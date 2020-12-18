@@ -1,0 +1,47 @@
+/* Contenedor de pagina de contacto - Imagen - Quién soy */
+.content_contacto{
+    margin-left: 2em;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2.5em;
+}
+
+.content_quiensoy{
+    margin: 0;
+    padding: 0;
+}
+
+.content_img_contact{
+    padding: 0;
+    margin: 0;    
+    justify-self: center;
+    align-self: start;
+}
+
+/* Imagen de contacto */
+.contact_img {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 20%);
+    border-radius: 0.4em;
+    width: 10em;
+    height: 10em;
+}
+
+/* Imagenes de medios para contactar */
+.content_medios{
+    margin-left: 1em;
+}
+
+.red_img{
+    width: 3.5em;
+    height: 3.5em;
+}
+
+#email_img{
+    padding-left: 0.4em;
+    width: 2.7em;
+    height: 2.7em;
+    padding-bottom: 0.45em;
+}

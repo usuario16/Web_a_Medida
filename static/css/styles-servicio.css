@@ -1,0 +1,4 @@
+/* Modificacion del estilo del punto listador */
+.content_services{
+    list-style: square;
+}

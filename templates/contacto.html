@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="red">{% block title %}Contacto{% endblock %}</h2>
+    <h3>¿Quién soy?</h3>
+    <div class="content_contacto">
+        <p class="content_quiensoy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sapiente delectus ut modi consequuntur eligendi quo voluptatibus 
+            doloremque, facere odio repellendus eum ipsum nemo impedit harum 
+            libero molestiae dolore nisi sint.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sapiente delectus ut modi consequuntur eligendi quo voluptatibus 
+            doloremque, facere odio repellendus eum ipsum nemo impedit harum 
+            libero molestiae dolore nisi sint.
+        </p>
+        <div class="content_img_contact">
+            <img class="contact_img" src="{{ url_for('static', filename='img/contacto.png') }}" alt="Yo">
+        </div>
+    </div>
+
+    <h3 class="medios_contact_content">Medios para contactar:</h3>
+    <div class="content_medios">
+        <a href="https://www.instagram.com"><img class="red_img" src="{{ url_for('static', filename='img/redes-img/instagram.png') }}" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img class="red_img" src="{{ url_for('static', filename='img/redes-img/facebook.png') }}" alt="Facebook"></a>
+        <a href="https://www.linkedin.com"><img class="red_img" src="{{ url_for('static', filename='img/redes-img/linkedin.png') }}" alt="Linkedin"></a>
+        <a href="https://mail.google.com/mail/u/0/"><img id="email_img" class="red_img" src="{{ url_for('static', filename='img/redes-img/email.png') }}" alt="Email"></a>
+    </div>
+
+{% endblock %}

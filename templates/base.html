@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-inicio.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-consultas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-servicio.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-contacto.css') }}">
+    <title>{% block title %}{% endblock %} | Tu web a la medida</title> 
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Tu web a la medida</h1>
+            <div>
+                <img src="{{ url_for('static', filename='img/logo-final.png') }}" alt="Logo de página">
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <a href="{{ url_for('inicio') }}"><li class="item">Inicio</li></a>
+                <a href="{{ url_for('servicio') }}"><li class="item">Servicio</li></a>
+                <a href="{{ url_for('consultas') }}"><li class="item">Consultas</li></a>
+                <a href="{{ url_for('contacto') }}"><li class="item">Contacto</li></a>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+            {% block content %}{% endblock %}
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <ul>
+                <h4 class="titular">Secciones</h4>
+                <h4 class="titular">Extras</h4>
+                <h4 class="titular">Redes / Medios</h4>
+                <a href="{{ url_for('inicio') }}"><li class="item_pie">Inicio</li></a>
+                <li>Tu web a la medida&#174</li>
+                <li>Instagram</li>
+                <a href="{{ url_for('servicio') }}"><li class="item_pie">Servicio</li></a>
+                <li>Diego Osorio</li>
+                <li>Facebook</li>
+                <a href="{{ url_for('consultas') }}"><li class="item_pie">Consultas</li></a>
+                <li>Chile</li>
+                <li>Email</li>
+                <a href="{{ url_for('contacto') }}"><li class="item_pie">Contacto</li></a>
+                <li>
+                    <!-- Este codgio JS es temporal, solo de prueba -->
+                    <script type="text/javascript">
+                        var d = new Date(); 
+                        dia = d.getDate()
+                        mes = d.getMonth()
+                        año = d.getFullYear()
+                        document.write(dia, ' - ', mes + 1, ' - ', año)
+                    </script>    
+                </li>
+                <li>Linkedin</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

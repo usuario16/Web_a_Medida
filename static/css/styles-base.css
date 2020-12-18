@@ -1,0 +1,137 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+    background-color: rgb(153, 209, 255);
+    text-align: justify;
+}
+
+/* ESTILOS TEMPLATE PADRE */
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+h2{
+    color: rgb(31, 31, 31);
+    font-size: 2em;
+}
+
+h3{
+    color: rgb(41, 41, 41);
+    font-size: 1.5em;
+}
+
+
+/* Contenedor padre */
+.contenedor{
+    margin-top: 0;
+    background-color: #fff;
+    padding: 2.5em 3.5em 2.5em 3.5em;
+    border-radius: 0.7em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 20%);
+    min-height: 40.3em;
+    max-height: auto;
+}
+
+
+/* Titular de la página */
+.titulo{
+    margin: 1.5em;
+    margin-top: 0.4em;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 4fr 1fr 2fr;
+}
+
+.titulo > h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 1em;
+    justify-self: end;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.titulo > div{
+    grid-column-start: 3;
+    justify-content: start;
+}
+
+.titulo > div > img{
+    width: 7em;
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav{
+    background-color: rgb(76, 160, 76);
+    border-radius: 0.7em;
+}
+
+nav > ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+nav > ul > a > li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em 3em 0.5em 3em;
+    color: #fff;
+    font-size: 1.4em;
+    transition: 0.36s;
+    margin: 0;
+    padding: 1em 2.5em 1em 2.5em;    
+}
+
+nav > ul > a > li:hover{
+    background-color: rgb(149, 212, 129);
+    color: #fff;
+}
+
+/* Contenidos de la página */
+.contenido{
+    margin: 2em 4em 2em 4em;
+    font-size: 1.1em;
+}
+
+
+
+/* Estilos del pie de página de la template */
+.footer{
+    margin-top: 2em;
+    padding: 1em 0 1em 0;
+    border-radius: 0.7em;
+    background-color: rgb(202, 74, 74);
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+    color: rgb(197, 197, 197);
+    font-size: 1.2em;
+}
+
+.footer > footer > ul{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    text-align: center;
+    grid-auto-rows: 2.5em;
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 0.8em;
+    align-items: center;
+}
+

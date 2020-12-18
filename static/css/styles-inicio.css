@@ -1,0 +1,16 @@
+.content_index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_index > ul > li{
+    margin:0;
+}
+
+
+.index_img{
+    align-self: center;
+    justify-self: center;
+    width: 15em;
+    height: 15em;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="red">{% block title %}Inicio{% endblock %}</h2>
+    <h3>¡Bienvenido!</h3>
+    <hr>
+    <div class="content_index"> 
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente delectus ut modi consequuntur eligendi quo voluptatibus 
+                doloremque, facere odio repellendus eum ipsum nemo impedit harum 
+                libero molestiae dolore nisi sint.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente delectus ut modi consequuntur eligendi quo voluptatibus 
+                doloremque, facere odio repellendus eum ipsum nemo impedit harum 
+                libero molestiae dolore nisi sint.
+            </li>
+        </ul>
+        <img class="index_img" src="{{ url_for('static', filename='img/inicio-img.png') }}" alt="">
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %}Consultas{% endblock %}</h2>
+    <h3>Preguntas y consultas:</h3>
+        <ul class="aclaracion">
+            <li class="p1">En esta sección podrás dejarme todas tus dudas.</li>
+            <li class="p2">
+                <strong>
+                    En el caso de que tus dudas fueran sobre el precio, 
+                    debes contarme la idea de tu proyecto aquí para, con ello,
+                    tener una referencia y darte el valor de mi ayuda.
+                </strong> 
+            </li>
+        </ul>
+    <hr>
+    <div class="content_form">
+        <form method="POST">
+            <input type="email" name="correo" placeholder="Correo" class="correo" required> 
+            <textarea name="consulta" class="consulta" placeholder="Comentario - Consulta" required></textarea>
+            <input type="submit" class="boton" value="Enviar">
+        </form>
+        <img class="consult_img" src="{{ url_for('static', filename='img/consultas-final.png') }}" alt="Consultas">
+    </div>
+    
+
+{% endblock %}

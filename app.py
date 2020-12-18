@@ -23,7 +23,7 @@ def data_to_db(d1, d2):
 # Vista de inicio
 @app.route('/')
 def inicio():
-    return render_template('inicio.html')
+    return render_template('index.html')
 
 
 # Vista de la pagina de servicio

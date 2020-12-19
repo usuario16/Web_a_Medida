@@ -7,9 +7,9 @@ app = Flask(__name__)
 def data_to_db(d1, d2):
     conection_db = mysql.connector.connect(
         host='localhost',
-        user='usuario16',
-        password='2866049diego',
-        database='sitioweb'
+        user=input('User: '),
+        password= input('Password: '),
+        database= input('Database: ')
     )
 
     cursor = conection_db.cursor(dictionary=True)

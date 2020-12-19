@@ -1,22 +1,28 @@
 from flask import (Flask, render_template, redirect, request, url_for)
-import sqlite3
-from datetime import datetime
-
+import mysql.connector
 
 app = Flask(__name__)
 
 # Funcion que introduce datos a la BBDD
 def data_to_db(d1, d2):
-    cursor = sqlite3.connect('consultas.db')
+    conection_db = mysql.connector.connect(
+        host='localhost',
+        user='usuario16',
+        password='2866049diego',
+        database='sitioweb'
+    )
+
+    cursor = conection_db.cursor(dictionary=True)
+
     cursor.execute(
         """
         INSERT INTO consultas (correo, consulta)
-        VALUES (?, ?);
+        VALUES (%s, %s);
         """,
         (d1, d2)
     )
-    cursor.commit()
-    cursor.close()
+    conection_db.commit()
+    conection_db.close()
     print('Datos ingresados con exito en la base de datos!')
 
 
